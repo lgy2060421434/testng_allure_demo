@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng类测试">
+    <test verbose="2" preserve-order="true" name="并发测试">
+      <classes>
+          <class name="testngDemo1.testngDemoData">
+              <methods>
+<!--                  只执行test、方法-->
+<!--                  <include name="test"></include>-->
+<!--                  除了tetst1不执行，其它方法都执行-->
+                  <exclude name="tetst1"></exclude>
+              </methods>
+          </class>
+      </classes>
+    </test>
+</suite>

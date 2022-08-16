@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng测试" verbose="1" parallel="methods" thread-count="4" time-out="60000">
+    <test verbose="2" preserve-order="true" name="并发测试">
+        <groups>
+            <define name="all">
+                <include name="test1"></include>
+                <include name="test2"></include>
+                <include name="test3"></include>
+            </define>
+            <run>
+                <include name="all"></include>
+                <include name="test3"/>
+                <include name="test2"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="testngDemo.TestngDemoParallerTest"></class>
+        </classes>
+    </test>
+</suite>

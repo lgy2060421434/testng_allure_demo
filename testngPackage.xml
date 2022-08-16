@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng测试">
+    <test verbose="2" preserve-order="true" name="并发测试">
+        <packages>
+            <package name="testngDemo1"></package>
+        </packages>
+    </test>
+</suite>
